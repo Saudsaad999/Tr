@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التسجيل في التدريب - نظام التدريب الصيفي</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="report.html">رفع التقرير</a>
+        <a href="attendance.html">سجل الحضور</a>
+        <a href="register_training.html">التسجيل في التدريب</a>
+        <a href="index.html">الصفحة الرئيسية</a>
+    </div>
+
+    <div class="content">
+        <h2>التسجيل في التدريب</h2>
+        <form action="register_training.php" method="POST">
+            <label for="student_id">رقم الطالب:</label>
+            <input type="text" id="student_id" name="student_id" required>
+
+            <label for="department">القسم:</label>
+            <input type="text" id="department" name="department" required>
+
+            <label for="company_supervisor">مشرف الشركة:</label>
+            <input type="text" id="company_supervisor" name="company_supervisor" required>
+
+            <label for="start_date">تاريخ البداية:</label>
+            <input type="date" id="start_date" name="start_date" required>
+
+            <button type="submit">التسجيل</button>
+        </form>
+    </div>
+
+</body>
+</html>

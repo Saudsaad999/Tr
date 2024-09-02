@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سجل الحضور - نظام التدريب الصيفي</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="report.html">رفع التقرير</a>
+        <a href="attendance.html">سجل الحضور</a>
+        <a href="register_training.html">التسجيل في التدريب</a>
+        <a href="index.html">الصفحة الرئيسية</a>
+    </div>
+
+    <div class="content">
+        <h2>سجل الحضور</h2>
+        <form action="attendance.php" method="POST">
+            <label for="attendance_date">تاريخ الحضور:</label>
+            <input type="date" id="attendance_date" name="attendance_date" required>
+
+            <label for="status">الحالة:</label>
+            <select id="status" name="status" required>
+                <option value="حاضر">حاضر</option>
+                <option value="غائب">غائب</option>
+            </select>
+
+            <button type="submit">تسجيل الحضور</button>
+        </form>
+    </div>
+
+</body>
+</html>

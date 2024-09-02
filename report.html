@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رفع التقرير - نظام التدريب الصيفي</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="report.html">رفع التقرير</a>
+        <a href="attendance.html">سجل الحضور</a>
+        <a href="register_training.html">التسجيل في التدريب</a>
+        <a href="index.html">الصفحة الرئيسية</a>
+    </div>
+
+    <div class="content">
+        <h2>رفع التقرير</h2>
+        <form action="upload_report.php" method="POST" enctype="multipart/form-data">
+            <label for="student_id">رقم الطالب:</label>
+            <input type="text" id="student_id" name="student_id" required>
+
+            <label for="report">التقرير:</label>
+            <textarea id="report" name="report" rows="5" required></textarea>
+
+            <button type="submit">رفع التقرير</button>
+        </form>
+    </div>
+
+</body>
+</html>
